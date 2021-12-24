@@ -19,15 +19,4 @@
 <p align="center">
 <a href="https://github.com/Optimus-Projects/BeeMusic/tree/Multi-Assistant"><img src="https://img.shields.io/badge/MULTI%20ASSISTANT%20MODE-blueviolet?style=for-the-badge" width="250""/</a>
 </p>
-    
-<h2 align="center">
-   Requirements
-    </h2>
-</p>
-
-<h2 align="center">
-   Stay Up-to-Date
-</h2>
-
-<p align="center"><img src="https://github.com/Optimus-Projects/BeeMusic/blob/main/Utils/star.gif" alt="NotReallyShikhar Github" width="1000px" /></p>
-
+   
