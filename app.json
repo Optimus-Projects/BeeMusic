@@ -1,14 +1,14 @@
 {
-  "name": "Yukki Music Bot",
+  "name": "Bumble Bee Music Bot",
   "description": "A Telegram Music Bot with proper functions written in Python with Pyrogram and Py-Tgcalls.",
-  "repository": "https://github.com/NotReallyShikhar/YukkiMusicBot",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+  "repository": "https://github.com/Optimus-Projects/BeeMusic",
+  "logo": "https://telegra.ph/file/447bcdc8957bcdaaa07ea.jpg",
   "keywords": [
   "python3",
   "telegram",
   "bot",
-  "Yukki",
-  "YukkiMusicBot",
+  "Bumble-Bee",
+  "Optimus-Projects",
   "telegram-bot",
   "pyrogram"
   ],
