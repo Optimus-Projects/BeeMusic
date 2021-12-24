@@ -7,8 +7,8 @@
 
 <p align="center">
     A Support Group and ready-to-use running instance of this bot can be found on Telegram <br>
-    <a href="https://t.me/Bee_Music_bot"> YukkiMusicBot </a> |
-    <a href="https://t.me/Optimus_Projects_Chat"> YukkiSupport </a>
+    <a href="https://t.me/Bee_Music_bot"> BumbleeBeeMusicBot </a> |
+    <a href="https://t.me/Optimus_Projects_Chat"> OptimusSupport </a>
 </p>
 
 
