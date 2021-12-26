@@ -12,19 +12,19 @@ from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
-from Yukki import MUSIC_BOT_NAME, app, db_mem, userbot
-from Yukki.Core.PyTgCalls import Queues
-from Yukki.Core.PyTgCalls.Converter import convert
-from Yukki.Core.PyTgCalls.Downloader import download
-from Yukki.Database import remove_active_chat
-from Yukki.Inline import (audio_markup, audio_timer_markup_start,
+from Bumble import MUSIC_BOT_NAME, app, db_mem, userbot
+from Bumble.Core.PyTgCalls import Queues
+from Bumble.Core.PyTgCalls.Converter import convert
+from Bumble.Core.PyTgCalls.Downloader import download
+from Bumble.Database import remove_active_chat
+from Bumble.Inline import (audio_markup, audio_timer_markup_start,
                           primary_markup, timer_markup)
-from Yukki.Utilities.changers import time_to_seconds
-from Yukki.Utilities.chat import specialfont_to_normal
-from Yukki.Utilities.theme import check_theme
-from Yukki.Utilities.thumbnails import gen_thumb
-from Yukki.Utilities.timer import start_timer
-from Yukki.Utilities.youtube import get_yt_info_id
+from Bumble.Utilities.changers import time_to_seconds
+from Bumble.Utilities.chat import specialfont_to_normal
+from Bumble.Utilities.theme import check_theme
+from Bumble.Utilities.thumbnails import gen_thumb
+from Bumble.Utilities.timer import start_timer
+from Bumble.Utilities.youtube import get_yt_info_id
 
 pytgcalls = PyTgCalls(userbot)
 
