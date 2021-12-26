@@ -1,6 +1,6 @@
 from typing import Dict, List, Union
 
-from Yukki import db
+from Bumble import db
 
 playlistdb_lofi = db.playlistlofi
 playlistdb_rock = db.playlistrock
