@@ -11,21 +11,21 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
-from Yukki import BOT_USERNAME, MUSIC_BOT_NAME, app, db_mem
-from Yukki.Core.PyTgCalls import Queues, Yukki
-from Yukki.Core.PyTgCalls.Converter import convert
-from Yukki.Core.PyTgCalls.Downloader import download
-from Yukki.Database import (is_active_chat, is_music_playing, music_off,
+from Bumble import BOT_USERNAME, MUSIC_BOT_NAME, app, db_mem
+from Bumble.Core.PyTgCalls import Queues, Yukki
+from Bumble.Core.PyTgCalls.Converter import convert
+from Bumble.Core.PyTgCalls.Downloader import download
+from Bumble.Database import (is_active_chat, is_music_playing, music_off,
                             music_on, remove_active_chat)
-from Yukki.Decorators.admins import AdminRightsCheck
-from Yukki.Decorators.checker import checker, checkerCB
-from Yukki.Inline import audio_markup, primary_markup
-from Yukki.Utilities.changers import time_to_seconds
-from Yukki.Utilities.chat import specialfont_to_normal
-from Yukki.Utilities.theme import check_theme
-from Yukki.Utilities.thumbnails import gen_thumb
-from Yukki.Utilities.timer import start_timer
-from Yukki.Utilities.youtube import get_yt_info_id
+from Bumble.Decorators.admins import AdminRightsCheck
+from Bumble.Decorators.checker import checker, checkerCB
+from Bumble.Inline import audio_markup, primary_markup
+from Bumble.Utilities.changers import time_to_seconds
+from Bumble.Utilities.chat import specialfont_to_normal
+from Bumble.Utilities.theme import check_theme
+from Bumble.Utilities.thumbnails import gen_thumb
+from Bumble.Utilities.timer import start_timer
+from Bumble.Utilities.youtube import get_yt_info_id
 
 loop = asyncio.get_event_loop()
 
