@@ -6,22 +6,22 @@ from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto, Message,
                             Voice)
 from youtube_search import YoutubeSearch
 
-from Yukki import (BOT_USERNAME, DURATION_LIMIT, DURATION_LIMIT_MIN,
+from Bumble import (BOT_USERNAME, DURATION_LIMIT, DURATION_LIMIT_MIN,
                    MUSIC_BOT_NAME, app, db_mem)
-from Yukki.Core.PyTgCalls.Converter import convert
-from Yukki.Core.PyTgCalls.Downloader import download
-from Yukki.Decorators.assistant import AssistantAdd
-from Yukki.Decorators.checker import checker
-from Yukki.Decorators.permission import PermissionCheck
-from Yukki.Inline import (playlist_markup, search_markup, search_markup2,
+from Bumble.Core.PyTgCalls.Converter import convert
+from Bumble.Core.PyTgCalls.Downloader import download
+from Bumble.Decorators.assistant import AssistantAdd
+from Bumble.Decorators.checker import checker
+from bumble.Decorators.permission import PermissionCheck
+from Bumble.Inline import (playlist_markup, search_markup, search_markup2,
                           url_markup, url_markup2)
-from Yukki.Utilities.changers import seconds_to_min, time_to_seconds
-from Yukki.Utilities.chat import specialfont_to_normal
-from Yukki.Utilities.stream import start_stream, start_stream_audio
-from Yukki.Utilities.theme import check_theme
-from Yukki.Utilities.thumbnails import gen_thumb
-from Yukki.Utilities.url import get_url
-from Yukki.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
+from Bumble.Utilities.changers import seconds_to_min, time_to_seconds
+from Bumble.Utilities.chat import specialfont_to_normal
+from Bumble.Utilities.stream import start_stream, start_stream_audio
+from Bumble.Utilities.theme import check_theme
+from Bumble.Utilities.thumbnails import gen_thumb
+from Bumble.Utilities.url import get_url
+from Bumble.Utilities.youtube import (get_yt_info_id, get_yt_info_query,
                                      get_yt_info_query_slider)
 
 loop = asyncio.get_event_loop()
