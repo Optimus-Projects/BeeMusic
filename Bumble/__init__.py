@@ -11,10 +11,10 @@ from motor.motor_asyncio import AsyncIOMotorClient as Bot
 from rich.console import Console
 from rich.table import Table
 
-from Yukki.Core.Clients.cli import app, userbot
-from Yukki.Core.Logger.Log import (startup_delete_last, startup_edit_last,
+from Bumble.Core.Clients.cli import app, userbot
+from Bumble.Core.Logger.Log import (startup_delete_last, startup_edit_last,
                                    startup_send_new)
-from Yukki.Utilities.changers import time_to_seconds
+from Bumble.Utilities.changers import time_to_seconds
 
 loop = asyncio.get_event_loop()
 console = Console()
@@ -25,7 +25,7 @@ MOD_NOLOAD = []
 
 ### Mongo DB
 MONGODB_CLI = Bot(mango)
-db = MONGODB_CLI.Yukki
+db = MONGODB_CLI.Bumble
 
 ### Boot Time
 boottime = time.time()
@@ -66,13 +66,13 @@ async def initiate_bot():
     )
     console.print(header)
     with console.status(
-        "[magenta] Booting up The Yukki Music Bot...",
+        "[magenta] Booting up The Bumble Bee Music Bot...",
     ) as status:
         console.print("┌ [red]Booting Up The Clients...\n")
         await app.start()
         await userbot.start()
         console.print("└ [green]Clients Booted Successfully!")
-        initial = await startup_send_new("Starting Yukki Music Bot...")
+        initial = await startup_send_new("Starting Bumble Bee Music Bot...")
         await asyncio.sleep(0.5)
         all_over = await startup_send_new("Checking Required Directories...")
         console.print(
