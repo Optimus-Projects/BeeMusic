@@ -10,15 +10,15 @@ from rich.console import Console
 from rich.table import Table
 from youtubesearchpython import VideosSearch
 
-from Yukki import (ASSID, ASSMENTION, ASSNAME, ASSUSERNAME, BOT_ID, BOT_NAME,
+from Bumble import (ASSID, ASSMENTION, ASSNAME, ASSUSERNAME, BOT_ID, BOT_NAME,
                    BOT_USERNAME, SUDOERS, app, db, userbot)
-from Yukki.Core.Logger.Log import (startup_delete_last, startup_edit_last,
+from Bumble.Core.Logger.Log import (startup_delete_last, startup_edit_last,
                                    startup_send_new)
-from Yukki.Core.PyTgCalls.Yukki import run
-from Yukki.Database import get_active_chats, get_sudoers, remove_active_chat
-from Yukki.Inline import private_panel
-from Yukki.Plugins import ALL_MODULES
-from Yukki.Utilities.inline import paginate_modules
+from Bumble.Core.PyTgCalls.Yukki import run
+from Bumble.Database import get_active_chats, get_sudoers, remove_active_chat
+from Bumble.Inline import private_panel
+from Bumble.Plugins import ALL_MODULES
+from Bumble.Utilities.inline import paginate_modules
 
 loop = asyncio.get_event_loop()
 console = Console()
@@ -27,7 +27,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Booting up The Yukki Music Bot...",
+        "[magenta] Booting up The Bumble Bee Music Bot...",
     ) as status:
         console.print("┌ [red]Clearing MongoDB cache...")
         try:
@@ -78,7 +78,7 @@ async def initiate_bot():
         await asyncio.sleep(2.4)
         await startup_delete_last(_____)
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Bumble Bee Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(
