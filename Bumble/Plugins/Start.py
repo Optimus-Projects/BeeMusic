@@ -8,20 +8,20 @@ from pyrogram import filters
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaPhoto, Message)
 
-from Yukki import ASSID, BOT_ID, MUSIC_BOT_NAME, OWNER_ID, SUDOERS, app
-from Yukki import boottime as bot_start_time
-from Yukki import db
-from Yukki.Core.PyTgCalls import Yukki
-from Yukki.Database import (add_nonadmin_chat, add_served_chat,
+from Bumble import ASSID, BOT_ID, MUSIC_BOT_NAME, OWNER_ID, SUDOERS, app
+from Bumble import boottime as bot_start_time
+from Bumble import db
+from Bumble.Core.PyTgCalls import Yukki
+from Bumble.Database import (add_nonadmin_chat, add_served_chat,
                             blacklisted_chats, get_assistant, get_authuser,
                             get_authuser_names, is_nonadmin_chat,
                             is_served_chat, remove_active_chat,
                             remove_nonadmin_chat, save_assistant)
-from Yukki.Decorators.admins import ActualAdminCB
-from Yukki.Decorators.permission import PermissionCheck
-from Yukki.Inline import (custommarkup, dashmarkup, setting_markup, setting_markup2,
+from Bumble.Decorators.admins import ActualAdminCB
+from Bumble.Decorators.permission import PermissionCheck
+from Bumble.Inline import (custommarkup, dashmarkup, setting_markup, setting_markup2,
                           start_pannel, usermarkup, volmarkup)
-from Yukki.Utilities.ping import get_readable_time
+from Bumble.Utilities.ping import get_readable_time
 
 welcome_group = 2
 
