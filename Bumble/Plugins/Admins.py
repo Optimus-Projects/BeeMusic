@@ -76,7 +76,7 @@ async def admins(_, message: Message):
         if not await is_music_playing(message.chat.id):
             return await message.reply_text("Music is already Paused.")
         await music_off(chat_id)
-        await Yukki.pytgcalls.pause_stream(chat_id)
+        await Bumble.pytgcalls.pause_stream(chat_id)
         await message.reply_text(
             f"🎧 Voicechat Paused by {message.from_user.mention}!"
         )
@@ -84,7 +84,7 @@ async def admins(_, message: Message):
         if await is_music_playing(message.chat.id):
             return await message.reply_text("Music is already Playing.")
         await music_on(chat_id)
-        await Yukki.pytgcalls.resume_stream(message.chat.id)
+        await Bumble.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(
             f"🎧 Voicechat Resumed by {message.from_user.mention}!"
         )
@@ -94,7 +94,7 @@ async def admins(_, message: Message):
         except QueueEmpty:
             pass
         await remove_active_chat(chat_id)
-        await Yukki.pytgcalls.leave_group_call(message.chat.id)
+        await Bumble.pytgcalls.leave_group_call(message.chat.id)
         await message.reply_text(
             f"🎧 Voicechat End/Stopped by {message.from_user.mention}!"
         )
@@ -131,7 +131,7 @@ async def admins(_, message: Message):
                     None, download, videoid, mystic, title
                 )
                 raw_path = await convert(downloaded_file)
-                await Yukki.pytgcalls.change_stream(
+                await Bumble.pytgcalls.change_stream(
                     chat_id,
                     InputStream(
                         InputAudioStream(
@@ -158,7 +158,7 @@ async def admins(_, message: Message):
                 )
                 os.remove(thumb)
             else:
-                await Yukki.pytgcalls.change_stream(
+                await Bumble.pytgcalls.change_stream(
                     chat_id,
                     InputStream(
                         InputAudioStream(
