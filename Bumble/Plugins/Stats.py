@@ -17,13 +17,13 @@ from pyrogram import filters
 from pyrogram.types import Message
 from pymongo import MongoClient
 from config import MONGO_DB_URI, MUSIC_BOT_NAME
-from Yukki import (BOT_ID, MUSIC_BOT_NAME, SUDOERS, app, boottime,
+from Bumble import (BOT_ID, MUSIC_BOT_NAME, SUDOERS, app, boottime,
                    userbot)
-from Yukki.Database import get_gbans_count, get_served_chats, get_sudoers
-from Yukki.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
+from Bumble.Database import get_gbans_count, get_served_chats, get_sudoers
+from Bumble.Inline import (stats1, stats2, stats3, stats4, stats5, stats6,
                           stats7)
-from Yukki.Plugins import ALL_MODULES
-from Yukki.Utilities.ping import get_readable_time
+from Bumble.Plugins import ALL_MODULES
+from Bumble.Utilities.ping import get_readable_time
 
 __MODULE__ = "Stats"
 __HELP__ = """
