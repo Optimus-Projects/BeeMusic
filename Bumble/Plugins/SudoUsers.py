@@ -9,8 +9,8 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from Yukki import BOT_ID, MUSIC_BOT_NAME, OWNER_ID, SUDOERS, app
-from Yukki.Database import (add_gban_user, add_off, add_on, add_sudo,
+from Bumble import BOT_ID, MUSIC_BOT_NAME, OWNER_ID, SUDOERS, app
+from Bumble.Database import (add_gban_user, add_off, add_on, add_sudo,
                             get_active_chats, get_served_chats, get_sudoers,
                             is_gbanned_user, remove_active_chat,
                             remove_gban_user, remove_served_chat, remove_sudo)
@@ -185,7 +185,7 @@ async def theme_func(_, message):
         try:
             await app.send_message(
                 x,
-                f"{MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
+                f"{MUSIC_BOT_NAME} has just restarted himself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
             )
             await remove_active_chat(x)
         except Exception:
