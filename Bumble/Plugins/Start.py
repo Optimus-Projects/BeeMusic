@@ -11,7 +11,7 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from Bumble import ASSID, BOT_ID, MUSIC_BOT_NAME, OWNER_ID, SUDOERS, app
 from Bumble import boottime as bot_start_time
 from Bumble import db
-from Bumble.Core.PyTgCalls import Yukki
+from Bumble.Core.PyTgCalls import Bumble
 from Bumble.Database import (add_nonadmin_chat, add_served_chat,
                             blacklisted_chats, get_assistant, get_authuser,
                             get_authuser_names, is_nonadmin_chat,
@@ -237,7 +237,7 @@ async def start_markup_check(_, CallbackQuery):
         }
         volume = 25
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -253,7 +253,7 @@ async def start_markup_check(_, CallbackQuery):
         }
         volume = 50
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -269,7 +269,7 @@ async def start_markup_check(_, CallbackQuery):
         }
         volume = 100
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -285,7 +285,7 @@ async def start_markup_check(_, CallbackQuery):
         }
         volume = 200
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -307,7 +307,7 @@ async def start_markup_check(_, CallbackQuery):
             "volume": volume,
         }
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -351,7 +351,7 @@ async def start_markup_check(_, CallbackQuery):
             "volume": volume,
         }
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -373,7 +373,7 @@ async def start_markup_check(_, CallbackQuery):
             "volume": volume,
         }
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -395,7 +395,7 @@ async def start_markup_check(_, CallbackQuery):
             "volume": volume,
         }
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
@@ -417,7 +417,7 @@ async def start_markup_check(_, CallbackQuery):
             "volume": volume,
         }
         try:
-            await Yukki.pytgcalls.change_volume_call(c_id, volume)
+            await Bumble.pytgcalls.change_volume_call(c_id, volume)
             await CallbackQuery.answer("Setting Audio Changes ...")
         except:
             return await CallbackQuery.answer("No active Group Call...")
