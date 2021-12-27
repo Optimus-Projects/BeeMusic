@@ -12,7 +12,7 @@ from Bumble.Core.PyTgCalls.Converter import convert
 from Bumble.Core.PyTgCalls.Downloader import download
 from Bumble.Decorators.assistant import AssistantAdd
 from Bumble.Decorators.checker import checker
-from bumble.Decorators.permission import PermissionCheck
+from Bumble.Decorators.permission import PermissionCheck
 from Bumble.Inline import (playlist_markup, search_markup, search_markup2,
                           url_markup, url_markup2)
 from Bumble.Utilities.changers import seconds_to_min, time_to_seconds
