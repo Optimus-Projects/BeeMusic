@@ -8,10 +8,10 @@ from config import get_queue
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from Yukki import SUDOERS, app, db_mem, userbot
-from Yukki.Database import get_active_chats, is_active_chat
-from Yukki.Decorators.checker import checker, checkerCB
-from Yukki.Inline import primary_markup
+from Bumble import SUDOERS, app, db_mem, userbot
+from Bumble.Database import get_active_chats, is_active_chat
+from Bumble.Decorators.checker import checker, checkerCB
+from Bumble.Inline import primary_markup
 
 from pyrogram.types import (InlineKeyboardMarkup, InputMediaPhoto, Message,
                             Voice)
